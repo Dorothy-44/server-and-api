@@ -1,0 +1,64 @@
+/* for the whole page */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+/* Body design */
+body {
+  background: linear-gradient(135deg, #546389,#546389);
+  color: #333;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  text-align: center;
+}
+
+/* Container */
+.container {
+  background: #9d7272;
+  padding: 2rem 3rem;
+  border-radius: 12px;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.15);
+  max-width: 500px;
+  width: 90%;
+}
+
+/* Headings */
+h1 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  color: #3d4469;
+}
+
+p {
+  font-size: 1.1rem;
+  margin-bottom: 1.5rem;
+}
+
+/* Buttons/links */
+a {
+  display: inline-block;
+  padding: 0.6rem 1.2rem;
+  background: #494e65;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 6px;
+  transition: background 0.3s;
+}
+
+a:hover {
+  background: #041a84;
+}
+
+/* for my error */
+.error h1 {
+  color: #e63946;
+}
+
+.error p {
+  color: #555;
+}
