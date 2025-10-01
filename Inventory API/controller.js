@@ -5,7 +5,7 @@ function response(success, data = null, message = '') {
   return { success, data, message };
 }
 
-// Validation + normalization
+// Validation 
 function validateItem(item) {
   const { name, price, size } = item;
 
@@ -13,7 +13,7 @@ function validateItem(item) {
     return 'Name is required and must be a string';
   }
 
-  // Try to convert price to number
+  // convert price to number
   const numericPrice = Number(price);
   if (isNaN(numericPrice) || numericPrice <= 0) {
     return 'Price must be a number greater than 0';
@@ -24,7 +24,7 @@ function validateItem(item) {
     return 'Size must be one of: s, m, l';
   }
 
-  return null; // valid
+  return null; 
 }
 
 function createItem(item) {

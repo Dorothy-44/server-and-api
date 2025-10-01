@@ -4,7 +4,7 @@ function handleRoutes(req, res) {
   const url = req.url;
   const method = req.method;
 
-  // Collect body if needed
+  
   let body = '';
   req.on('data', chunk => (body += chunk.toString()));
 
